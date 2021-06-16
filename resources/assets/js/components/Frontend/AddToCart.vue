@@ -82,7 +82,6 @@
         },
         methods: {
             addToCart: function(product){
-                console.log(product);
                 this.product_colors = (this.product_colors).filter(x=>{
                     if(x!='')
                         return x;
@@ -141,7 +140,6 @@
                 window.location.href=window.location.origin+'/product/'+product.slug;
             },
             openCard:function(product){
-                console.log(this.product);
                 if(product.size_id){
                     this.product_sizes  = (JSON.parse(product.size_id));                    
                 }
